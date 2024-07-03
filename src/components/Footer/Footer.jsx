@@ -1,10 +1,12 @@
+import logo from '../../assets/logos/white-logo.svg';
+import './Footer.scss';
+
 export function PageFooter () {
-    return <header>
-            <nav>
-                <NavLink to="/">Acceuil</NavLink>
-                <NavLink to="/A-Propos">Blog</NavLink>
-                <NavLink to="/contact">Contact</NavLink>
-            </nav>
-            <h1>Kasa</h1>
-        </header>
+    
+    return <footer>
+                <div className='footer-container'>
+                    <img src={logo} alt="Logo Kasa blanc" />
+                    <p>© 2020 Kasa. All rights reserved</p>
+                </div>
+        </footer>
   }

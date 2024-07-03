@@ -1,0 +1,32 @@
+.header {
+    display: flex;
+    max-width: 1480px;
+    padding: 0 20px;
+    margin: 0 auto;
+    justify-content: space-between;
+    flex-direction: row;
+
+    .red-logo {
+        
+    }
+
+    .nav-menu {
+        font-family: 'Montserrat';
+        font-weight: 500;
+        font-size: 24px;
+        align-items: center;
+        display: flex;
+        gap: 30px;
+        
+        a {
+            // padding-bottom: 2px;
+        }
+
+        .active {
+            text-decoration: underline;
+            text-decoration-skip-ink: none;
+            padding-bottom: 0;
+            // border-bottom: solid 2px black;
+        }
+    }
+}

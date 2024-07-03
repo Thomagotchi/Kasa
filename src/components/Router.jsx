@@ -1,13 +1,13 @@
-import { PageError } from "./Error/Error";
-import { PageHeader } from "./Header/Header";
+import { Error } from "../Pages/Error/PageError";
+import { PageAcceuil } from "../Pages/Acceuil/PageAcceuil";
 import { PageAPropos } from "../Pages/APropos/PageAPropos";
-import { Outlet, RouterProvider, createBrowserRouter } from "react-router-dom";
+import { Outlet, createBrowserRouter } from "react-router-dom";
 
 export const Router = createBrowserRouter([
     {
       path: '/',
-      element: <Root/>,
-      errorElement: <PageError/>,
+      element: <PageAcceuil/>,
+      errorElement: <Error/>,
       children: [
         {
           path: '/A-Propos',
@@ -20,12 +20,3 @@ export const Router = createBrowserRouter([
       ]
     } 
   ])
-
-function Root () {
-    return <>
-        <PageHeader />
-        <div className="container">
-            <Outlet/>
-        </div>
-    </>
-}
