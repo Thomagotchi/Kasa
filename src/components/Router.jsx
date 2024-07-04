@@ -1,7 +1,7 @@
 import { Error } from "../Pages/Error/PageError";
 import { PageAcceuil } from "../Pages/Acceuil/PageAcceuil";
 import { PageAPropos } from "../Pages/APropos/PageAPropos";
-import { Outlet, createBrowserRouter } from "react-router-dom";
+import { createBrowserRouter } from "react-router-dom";
 
 export const Router = createBrowserRouter([
     {
