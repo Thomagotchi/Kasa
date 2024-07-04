@@ -3,7 +3,7 @@ import './Banner.scss';
 const Banner = ({img, text}) => {
     if (!text) {
         return <div className='banner-container'>
-                <img src={img} alt="Photo panoramique d'une vallée." className="banner-photo"/>
+                <img src={img} alt="Photo panoramique d'une vallée." className="banner-photo-propos"/>
                 
     </div>
     } else {
