@@ -1,4 +1,4 @@
-import logo from '../../assets/logos/white-logo.svg';
+import logo from '../../Assets/Logos/white-logo.svg';
 import './Footer.scss';
 
 export function PageFooter () {

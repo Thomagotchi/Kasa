@@ -1,13 +1,9 @@
-import { PageFooter } from "../../components/Footer/Footer"
-import { PageHeader } from "../../components/Header/Header"
-import { Outlet } from "react-router-dom"
+import BackgroundImage from "../../Assets/Images/falaise.jpg"
+import Banner from "../../Components/Banner/Banner"
+import './PageAcceuil.scss';
 
 export function PageAcceuil () {
-    return <> Hello
-        {/* <PageHeader/>
-        <div className="container">
-            <Outlet/>
-        </div>
-        <PageFooter/> */}
-    </>
+    return <div className="body-container">
+        <Banner img={BackgroundImage} text='Chez vous, partout et ailleurs'/>
+    </div>
 }

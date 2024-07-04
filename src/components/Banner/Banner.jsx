@@ -1,6 +1,7 @@
+import './Banner.scss';
 
-export function Banner (img, text) {
-    if (text === null) {
+const Banner = ({img, text}) => {
+    if (!text) {
         return <div className='banner-container'>
                 <img src={img} alt="Photo panoramique d'une vallée." className="banner-photo"/>
                 
@@ -8,7 +9,11 @@ export function Banner (img, text) {
     } else {
         return <div className='banner-container'>
                 <img src={img} alt="Photo panoramique de falaises." className="banner-photo"/>
-                <p>{text}</p>
+                <div className="banner-title">
+                    <h1 className="banner-text">{text}</h1>
+                </div>
         </div>
     }
 }
+
+export default Banner
