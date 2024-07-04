@@ -6,6 +6,10 @@
     justify-content: space-between;
     flex-direction: row;
 
+    img {
+        object-fit: cover;
+    }
+   
     .nav-menu {
         font-family: 'Montserrat';
         font-weight: 500;
