@@ -1,0 +1,24 @@
+.dropdown-top-bar {
+    margin: 100px 100px;
+
+    background-color: rgba(255, 96, 96, 1);
+    color: white;
+    display: flex;
+    padding: 10px 20px;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 5px;
+    
+    h2 {
+        margin: 0;
+        font-size: 18px;
+    }
+
+    img {
+        transition: 0.4s ease;
+    }
+
+    .dropdown-arrow-true {
+        transform: rotate(180deg);
+    }
+}
