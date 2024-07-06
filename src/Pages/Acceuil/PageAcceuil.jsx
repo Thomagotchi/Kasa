@@ -7,7 +7,11 @@ import Listings from "../../Data/Listings.json";
 export function PageAcceuil() {
   return (
     <div className="body-container">
-      <Banner img={BackgroundImage} text="Chez vous, partout et ailleurs" />
+      <Banner
+        img={BackgroundImage}
+        text="Chez vous, partout et ailleurs"
+        key={1}
+      />
       <div className="gallery">
         {Listings.map((element) => (
           <Card id={element.id} title={element.title} cover={element.cover} />
