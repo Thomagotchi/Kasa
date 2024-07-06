@@ -2,15 +2,15 @@ import { useState } from "react";
 import arrow from "../../Assets/Arrows/arrow.svg";
 import "./Dropdown.scss";
 
-const Dropdown = ({ title, info }) => {
-  const [active, setActive] = useState(true);
+const Dropdown = ({ title, info, key }) => {
+  const [active, setActive] = useState(false);
 
   function toggleActive() {
     setActive(!active);
   }
 
   return (
-    <li className="dropdown-box">
+    <li className="dropdown-box" key={key}>
       <div className="dropdown-top-bar">
         <h2 className="dropdown-title">{title}</h2>
         <img
