@@ -6,7 +6,7 @@ import Data from "../../Data/APropos.json";
 
 export function PageAPropos() {
   return (
-    <div className="body-container">
+    <div className="about-container">
       <Banner img={BackgroundImage} />
       <ul className="dropdown-container">
         {Data.map((element) => (
