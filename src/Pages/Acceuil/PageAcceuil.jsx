@@ -14,7 +14,12 @@ export function PageAcceuil() {
       />
       <div className="gallery">
         {Listings.map((element) => (
-          <Card id={element.id} title={element.title} cover={element.cover} />
+          <Card
+            id={element.id}
+            title={element.title}
+            cover={element.cover}
+            key={element.id}
+          />
         ))}
       </div>
     </div>

@@ -11,9 +11,10 @@ export function PageAPropos() {
       <ul className="dropdown-container">
         {Data.map((element) => (
           <Dropdown
-            title={element.title}
-            info={element.content}
-            key={element.title}
+            element={element}
+            elementTitle={element.title}
+            elementListItems={element.description}
+            key={Data.indexOf(element)}
           />
         ))}
       </ul>
