@@ -10,8 +10,7 @@ export function PageFicheLogement() {
   console.log(locId);
   console.log(foundListing);
 
-  if (foundListing === undefined) {
-    // return <div> Bye!</div>;
+  if (!foundListing) {
     return <Navigate to="/404" replace={true} />;
   } else {
     return <FicheLogement Listing={foundListing} />;
