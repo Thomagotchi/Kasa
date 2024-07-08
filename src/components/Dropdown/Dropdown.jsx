@@ -2,7 +2,11 @@ import { useState } from "react";
 import arrow from "../../Assets/Arrows/arrow.svg";
 import "./Dropdown.scss";
 
-const Dropdown = ({ title, info, key }) => {
+const PrintDescription = ({ elementListItem }) => {
+  return <li>{elementListItem}</li>;
+};
+
+const Dropdown = ({ element, elementListItems, elementTitle }) => {
   const [active, setActive] = useState(false);
 
   function toggleActive() {
@@ -10,9 +14,9 @@ const Dropdown = ({ title, info, key }) => {
   }
 
   return (
-    <li className="dropdown-box" key={key}>
+    <div className="dropdown-box">
       <div className="dropdown-top-bar">
-        <h2 className="dropdown-title">{title}</h2>
+        <h2 className="dropdown-title">{elementTitle}</h2>
         <img
           src={arrow}
           alt="dropdown arrow"
@@ -21,9 +25,14 @@ const Dropdown = ({ title, info, key }) => {
         />
       </div>
       <div className={`dropdown-info-${active}`}>
-        <p className="dropdown-info-text">{info}</p>
+        {elementListItems.map((elementListItem) => (
+          <PrintDescription
+            elementListItem={elementListItem}
+            key={elementListItem.split(" ").slice(0, 1).join("")}
+          />
+        ))}
       </div>
-    </li>
+    </div>
   );
 };
 

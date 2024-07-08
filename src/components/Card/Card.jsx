@@ -3,7 +3,7 @@ import "./Card.scss";
 
 const Card = ({ id, title, cover }) => {
   return (
-    <Link to={id} className="gallery-card" key={id}>
+    <Link to={id} className="gallery-card">
       <div className="cover-container">
         <img src={cover} alt={title} className="gallery-image" />
       </div>

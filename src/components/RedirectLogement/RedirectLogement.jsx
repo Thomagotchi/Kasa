@@ -7,9 +7,6 @@ export function PageFicheLogement() {
 
   const foundListing = Listings.find((element) => element.id === locId);
 
-  console.log(locId);
-  console.log(foundListing);
-
   if (!foundListing) {
     return <Navigate to="/404" replace={true} />;
   } else {

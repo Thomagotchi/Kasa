@@ -38,11 +38,11 @@
         }
     }
 
-    p {
+    li {
         display: flex;
         font-size: 18px;
         font-weight: 400;
-        padding: 5px 15px;
+        padding: 5px 15px 25px 15px;
         align-items: center;
         justify-content: center;
     }
@@ -55,7 +55,7 @@
         opacity: 1;
         top: -50%;
         position: relative;
-        p {
+        li {
             margin-top: 0;
             opacity: 1;
         }
@@ -69,7 +69,7 @@
         overflow: hidden;
         transition: 0.5s;
 
-        p {
+        li {
             position: relative;
             z-index: -1;
         }
