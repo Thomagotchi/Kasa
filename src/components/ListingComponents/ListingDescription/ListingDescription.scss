@@ -1,0 +1,28 @@
+.listing-description {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 25px;
+
+    .listing-left-column {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+    }
+
+    .listing-right-column {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+}
+
+.listing-dropdowns {
+
+    .dropdown-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        max-width: 1240px;
+        width: 100%;
+    }
+}
