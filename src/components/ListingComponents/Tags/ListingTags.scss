@@ -1,0 +1,20 @@
+.listing-tags-container {
+    padding: 0;
+    margin: 30px 0;
+    list-style: none;
+    display: flex;
+    gap: 10px;
+
+    .listing-tag {
+        display: flex;
+        color: white;
+        font-size: 14px;
+        font-weight: 700;
+        padding: 4px 10px;
+        background-color: rgba(255, 96, 96, 1);
+        border-radius: 10px;
+        min-width: 115px;
+        align-items: center;
+        justify-content: center;
+    }
+}
