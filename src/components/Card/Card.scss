@@ -45,6 +45,7 @@
             height: 100%;
             width: 100%;
             z-index: 1;
+            transition: opacity 0.5s;
             
             .card-title {
                 font-family: 'Montserrat';
@@ -53,6 +54,10 @@
                 color: white;
                 margin: auto 20px 20px 20px;
             }
+        }
+
+        .card-title-container:hover {
+            opacity: 0.8;
         }
     }
 }
