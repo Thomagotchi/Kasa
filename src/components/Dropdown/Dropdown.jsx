@@ -6,15 +6,15 @@ const PrintDescription = ({ elementListItem }) => {
   return <li>{elementListItem}</li>;
 };
 
-const Dropdown = ({ element, elementListItems, elementTitle }) => {
-  const [active, setActive] = useState(false);
+const Dropdown = ({ elementListItems, elementTitle }) => {
+  const [active, setActive] = useState(true);
 
   function toggleActive() {
     setActive(!active);
   }
 
   return (
-    <div className="dropdown-box">
+    <div className={`dropdown-box ${active}`}>
       <div className="dropdown-top-bar">
         <h2 className="dropdown-title">{elementTitle}</h2>
         <img
@@ -24,14 +24,14 @@ const Dropdown = ({ element, elementListItems, elementTitle }) => {
           className={`dropdown-arrow-${active}`}
         />
       </div>
-      <div className={`dropdown-info-${active}`}>
+      <ul className={`dropdown-info ${active}`}>
         {elementListItems.map((elementListItem) => (
           <PrintDescription
             elementListItem={elementListItem}
             key={elementListItem.split(" ").slice(0, 1).join("")}
           />
         ))}
-      </div>
+      </ul>
     </div>
   );
 };

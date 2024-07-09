@@ -1,8 +1,10 @@
+import "./ListingTitle.scss";
+
 const ListingTitle = ({ Listing }) => {
   return (
     <>
-      <div className="listing-title">{Listing.title}</div>
-      <div className="listing-location">{Listing.location}</div>
+      <h1 className="listing-title">{Listing.title}</h1>
+      <p className="listing-location">{Listing.location}</p>
     </>
   );
 };

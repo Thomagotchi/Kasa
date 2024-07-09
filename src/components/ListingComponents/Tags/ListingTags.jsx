@@ -1,14 +1,20 @@
+import "./ListingTags.scss";
+
 const CreateTag = ({ Tag }) => {
-  return <p className="listing-tag">{Tag}</p>;
+  return (
+    <li key={Tag} className="listing-tag">
+      {Tag}
+    </li>
+  );
 };
 
 const ListingTags = ({ Listing }) => {
   return (
-    <div className="listing-tags-container">
+    <ul className="listing-tags-container">
       {Listing.tags.map((tag) => (
         <CreateTag Tag={tag} key={tag} />
       ))}
-    </div>
+    </ul>
   );
 };
 
