@@ -8,20 +8,33 @@
 
     img {
         object-fit: cover;
+        width: clamp(145px, 30%, 210px);
     }
    
     .nav-menu {
         font-family: 'Montserrat';
         font-weight: 500;
-        font-size: 24px;
+        font-size: clamp(12px, 2.6vmin, 24px);
         align-items: center;
         display: flex;
-        gap: 57px;
+        gap: 5vw;
 
         .active {
             text-decoration: underline;
             text-decoration-skip-ink: none;
             padding-bottom: 0;
+        }
+    }
+}
+
+@media (max-width: 1024px) {
+    
+}
+
+@media (max-width: 768px) {
+    .nav-menu {
+        a {
+            text-transform: uppercase;
         }
     }
 }

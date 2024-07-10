@@ -6,6 +6,11 @@ import "./Carousel.scss";
 const Carousel = ({ Listing }) => {
   const [imageIndex, setImageIndex] = useState(0);
 
+  const slides = [];
+  Listing.pictures.map((element) => {
+    slides.push(element);
+  });
+
   const PreviousImage = () => {
     !imageIndex
       ? setImageIndex(Listing.pictures.length - 1)
