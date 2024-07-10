@@ -9,7 +9,8 @@ export function PageAcceuil() {
     <div className="body-container">
       <Banner
         img={BackgroundImage}
-        text="Chez vous, partout et ailleurs"
+        text1="Chez vous,"
+        text2="partout et ailleurs"
         key={1}
       />
       <div className="gallery">

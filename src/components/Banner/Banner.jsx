@@ -1,7 +1,7 @@
 import "./Banner.scss";
 
-const Banner = ({ img, text }) => {
-  if (!text) {
+const Banner = ({ img, text1, text2 }) => {
+  if (!text1 || !text2) {
     return (
       <div className="banner-container">
         <img
@@ -20,7 +20,8 @@ const Banner = ({ img, text }) => {
           className="banner-photo"
         />
         <div className="banner-title">
-          <h1 className="banner-text">{text}</h1>
+          <h1 className="banner-text">{text1}</h1>
+          <h1 className="banner-text second-text">{text2}</h1>
         </div>
       </div>
     );
