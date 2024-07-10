@@ -8,7 +8,7 @@ export function PageAPropos() {
   return (
     <div className="about-container">
       <Banner img={BackgroundImage} />
-      <ul className="dropdown-container">
+      <ul className="dropdown-container-a-propos">
         {Data.map((element) => (
           <Dropdown
             elementTitle={element.title}
