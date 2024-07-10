@@ -3,4 +3,8 @@
     display: flex;
     list-style: none;
     gap: 8px;
+
+    img {
+        height: clamp(13px, 3vw, 24px);
+    }
 }

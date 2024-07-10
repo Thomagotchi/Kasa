@@ -8,13 +8,23 @@
     .listing-tag {
         display: flex;
         color: white;
-        font-size: 14px;
+        font-size: clamp(10px, 2vw, 14px);
         font-weight: 700;
         padding: 4px 10px;
         background-color: rgba(255, 96, 96, 1);
         border-radius: 10px;
-        min-width: 115px;
+        min-width: clamp(68px, 10vw, 115px);
         align-items: center;
         justify-content: center;
+    }
+}
+
+@media (max-width: 678px) {
+    .listing-tags-container {
+        margin: 10px 0;
+
+        .listing-tag {
+            padding: 3px 8px;
+        }
     }
 }
