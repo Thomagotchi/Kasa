@@ -2,7 +2,7 @@
     display: flex;
     max-width: 1240px;
     padding: 0 20px;
-    margin: 30px auto;
+    margin: clamp(20px, 3%, 30px) auto;
     justify-content: space-between;
     flex-direction: row;
 

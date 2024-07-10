@@ -7,7 +7,7 @@
     height: clamp(111px, calc(2em + 15vw), 223px);
     background-color: black;
     overflow: hidden;
-    margin: 45px 0;
+    margin: clamp(20px, 3%, 45px) 0;
 
     .banner-photo {
         position: absolute;
