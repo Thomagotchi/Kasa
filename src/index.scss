@@ -6,7 +6,9 @@ body {
 }
 
 #root {
-  min-height: 97vh;
+  flex-direction: column;
+  display: flex;
+  min-height: 100dvh;
 }
 
 a {
