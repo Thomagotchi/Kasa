@@ -47,6 +47,16 @@
     }
 }
 
+@media (max-width: 1048px) {
+    .carousel-container {
+        .carousel-elements {
+            .carousel-counter {
+                display: none;
+            }
+        }
+    }
+}
+
 @media (max-width: 678px) {
     .carousel-container {
         height: 255px;
