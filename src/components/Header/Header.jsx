@@ -7,7 +7,7 @@ export function PageHeader() {
     <header className="header">
       <img src={logo} alt="Logo du site Kasa" className="red-logo" />
       <nav className="nav-menu">
-        <NavLink to="/">Acceuil</NavLink>
+        <NavLink to="/">Accueil</NavLink>
         <NavLink to="/A-Propos">A Propos</NavLink>
       </nav>
     </header>

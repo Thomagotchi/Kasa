@@ -11,7 +11,11 @@ const Carousel = ({ Listing }) => {
   const [nextImageIndex, setNextImageIndex] = useState(1);
 
   const checkPrevImageIndex = (elementIndex) => {
-    return prevImageIndex === elementIndex ? "prev" : "";
+    if (Listing.pictures.length > 1) {
+      return prevImageIndex === elementIndex ? "prev" : "";
+    } else {
+      return "";
+    }
   };
 
   const checkCurrentImageIndex = (elementIndex) => {
@@ -19,7 +23,11 @@ const Carousel = ({ Listing }) => {
   };
 
   const checkNextImageIndex = (elementIndex) => {
-    return nextImageIndex === elementIndex ? "next" : "";
+    if (Listing.pictures.length > 1) {
+      return nextImageIndex === elementIndex ? "next" : "";
+    } else {
+      return "";
+    }
   };
 
   const PreviousImage = () => {
@@ -34,10 +42,6 @@ const Carousel = ({ Listing }) => {
     !nextImageIndex
       ? setNextImageIndex(Listing.pictures.length - 1)
       : setNextImageIndex(nextImageIndex - 1);
-
-    console.log(prevImageIndex);
-    console.log(imageIndex);
-    console.log(nextImageIndex);
   };
 
   const NextImage = () => {
@@ -52,10 +56,6 @@ const Carousel = ({ Listing }) => {
     nextImageIndex === Listing.pictures.length - 1
       ? setNextImageIndex(0)
       : setNextImageIndex(nextImageIndex + 1);
-
-    console.log(prevImageIndex);
-    console.log(imageIndex);
-    console.log(nextImageIndex);
   };
 
   return (
@@ -97,56 +97,5 @@ const Carousel = ({ Listing }) => {
     </div>
   );
 };
-
-// const Carousel = ({ Listing }) => {
-//   const [imageIndex, setImageIndex] = useState(0);
-
-//   const slides = [];
-//   Listing.pictures.map((element) => {
-//     slides.push(element);
-//   });
-
-//   const PreviousImage = () => {
-//     !imageIndex
-//       ? setImageIndex(Listing.pictures.length - 1)
-//       : setImageIndex(imageIndex - 1);
-//   };
-
-//   const NextImage = () => {
-//     imageIndex === Listing.pictures.length - 1
-//       ? setImageIndex(0)
-//       : setImageIndex(imageIndex + 1);
-//   };
-
-//   return (
-//     <div className="carousel-container">
-//       <img
-//         src={Listing.pictures[imageIndex]}
-//         alt={Listing.title}
-//         key={Listing.id}
-//         className="carousel-image"
-//       />
-//       {Listing.pictures.length > 1 && (
-//         <div className="carousel-elements">
-//           <img
-//             src={leftArrow}
-//             alt="Left arrow."
-//             onClick={PreviousImage}
-//             className="carousel-arrow"
-//           />
-//           <div className="carousel-counter">
-//             {imageIndex + 1}/{Listing.pictures.length}
-//           </div>
-//           <img
-//             src={rightArrow}
-//             alt="Right arrow."
-//             onClick={NextImage}
-//             className="carousel-arrow"
-//           />
-//         </div>
-//       )}
-//     </div>
-//   );
-// };
 
 export default Carousel;
