@@ -30,7 +30,7 @@
 
         .carousel-arrow {
             margin: auto 15px;
-            height: 19%;
+            height: clamp( 19px, 5vw, 79px);
             transition: 0.3s ease-in-out;
             &:hover {
                 cursor: pointer;
