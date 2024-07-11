@@ -1,10 +1,10 @@
 import BackgroundImage from "../../Assets/Images/falaise.jpg";
 import Banner from "../../Components/Banner/Banner";
-import "./PageAcceuil.scss";
+import "./PageAccueil.scss";
 import Card from "../../Components/Card/Card";
 import Listings from "../../Data/Listings.json";
 
-export function PageAcceuil() {
+export function PageAccueil() {
   return (
     <div className="body-container">
       <Banner

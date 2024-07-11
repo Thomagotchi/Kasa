@@ -1,5 +1,5 @@
 import { PageError } from "../Pages/Error/PageError";
-import { PageAcceuil } from "../Pages/Acceuil/PageAcceuil";
+import { PageAccueil } from "../Pages/Accueil/PageAccueil";
 import { PageAPropos } from "../Pages/APropos/PageAPropos";
 import { Routes, Route, BrowserRouter, Navigate } from "react-router-dom";
 import { PageHeader } from "./Header/Header";
@@ -11,7 +11,7 @@ export function Router() {
     <BrowserRouter>
       <PageHeader />
       <Routes>
-        <Route path="/" element={<PageAcceuil />} />
+        <Route path="/" element={<PageAccueil />} />
         <Route path="/A-Propos" element={<PageAPropos />} />
         <Route path="/:locId" element={<PageFicheLogement />} />
 
