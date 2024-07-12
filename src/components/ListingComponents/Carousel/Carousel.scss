@@ -1,3 +1,4 @@
+//--- SASS Pour le composant Carousel ---
 .carousel-container {
     position: relative;
     display: flex;
@@ -11,6 +12,7 @@
     border-radius: clamp(10px, 3vw, 25px);
     margin: 30px 0;
 
+//--- Propriétés pour l'image du Carousel (taille + display none + transition) ---
     .carousel-image {
         display: none;
         height: 100%;
@@ -21,16 +23,19 @@
         transition: 0.5s;
     }
 
+//--- Propriétés pour l'image précédente du Carousel (display flex + TranslateX -100%) ---
     .carousel-image.prev{
         display: flex;
         transform: translateX(-100%);
     }
 
+//--- Propriétés pour l'image actuelle du Carousel (display flex + TranslateX 0) ---
     .carousel-image.active{
         display: flex;
         transform: translateX(0);
     }
 
+//--- Propriétés pour l'image suivante du Carousel (display flex + TranslateX 100) ---
     .carousel-image.next{
         display: flex;
         transform: translateX(100%);
@@ -62,6 +67,7 @@
     }
 }
 
+//--- Responsive Pour le composant Carousel ---
 @media (max-width: 1048px) {
     .carousel-container {
         .carousel-elements {

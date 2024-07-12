@@ -1,3 +1,4 @@
+//--- SASS Pour le composant Tags ---
 .listing-tags-container {
     padding: 0;
     margin: 20px 0 0 0;
@@ -19,6 +20,7 @@
     }
 }
 
+//--- Responsive Pour le composant Tags ---
 @media (max-width: 678px) {
     .listing-tags-container {
         margin: 10px 0;

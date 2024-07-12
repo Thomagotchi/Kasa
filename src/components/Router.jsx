@@ -1,11 +1,15 @@
+//--- Import de fonction React ---
 import { PageError } from "../Pages/Error/PageError";
+import { Routes, Route, BrowserRouter, Navigate } from "react-router-dom";
+
+//--- Import des pages pour chaque route ---
 import { PageAccueil } from "../Pages/Accueil/PageAccueil";
 import { PageAPropos } from "../Pages/APropos/PageAPropos";
-import { Routes, Route, BrowserRouter, Navigate } from "react-router-dom";
 import { PageHeader } from "./Header/Header";
 import { PageFooter } from "./Footer/Footer";
 import { PageFicheLogement } from "./RedirectLogement/RedirectLogement";
 
+//--- Fonction qui retourne les composants approprier en fonction de l'URL ---
 export function Router() {
   return (
     <BrowserRouter>
