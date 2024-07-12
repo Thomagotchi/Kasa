@@ -1,3 +1,4 @@
+//--- SASS Pour le Header ---
 .header {
     display: flex;
     max-width: 1240px;
@@ -28,6 +29,7 @@
     }
 }
 
+//--- Responsive Pour le Header ---
 @media (max-width: 768px) {
     .nav-menu {
         a {

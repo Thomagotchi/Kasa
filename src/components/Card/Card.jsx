@@ -1,7 +1,7 @@
-//--- Import de la fonction Link de React ---
+//--- Import de fonction React ---
 import { Link } from "react-router-dom";
 
-//--- Import du CSS ---
+//--- Import du SASS ---
 import "./Card.scss";
 
 //--- Composant Card pour la page Acceuil ---

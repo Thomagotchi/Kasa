@@ -1,3 +1,4 @@
+//--- SASS Pour le Footer ---
 footer {
     display: flex;
     justify-content: center;
@@ -28,6 +29,7 @@ footer {
     }
 }
 
+//--- Responsive Pour le Footer ---
 @media (max-width: 580px) {
 footer {
     .footer-container {

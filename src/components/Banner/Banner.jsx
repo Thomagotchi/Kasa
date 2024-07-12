@@ -1,4 +1,4 @@
-//--- Import SCSS ---
+//--- Import SASS ---
 import "./Banner.scss";
 
 //--- Composant Banner ---
