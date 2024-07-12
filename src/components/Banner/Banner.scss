@@ -1,3 +1,4 @@
+//--- CSS pour le Banner ---
 .banner-container {
     border-radius: clamp(10px, 2vw, 25px);
     position: relative;
@@ -52,6 +53,7 @@
     }
 }
 
+//--- Responsive pour le Banner ---
 @media (max-width: 768px) {
     .banner-title {
         gap: 0px;
